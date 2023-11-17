@@ -13,17 +13,23 @@ Create and specify a folder to store all the clean flights "clean_data" (2,868 f
 
 ### Reproduce results
 
-- "01_Vizu_NASA_sample.R" : vizualize a single NASA flight (Figure 1 in the article)  
-- "02_HMM_uni_unique.R" : use the RoC to perform the segmentation of the 3 main flight phases for a single flight of your choice (Figure 3)  
-  Loop this script to get the results for 2,868 flights.   
-- "03_HMM_uni_unique_smoothed.R" : segmentation of the 3 main flight phases for given flight with smoothing  
-  Loop this script to get the results for several flights.   
-- "04_Plot_uni.R" : plot results for the 3 main flight phases looping script "02_HMM_uni_unique.R" (Figure 4)  
-- "04_Plot_uni_smooth.R" : plot results for the 3 main flight phases with smoothing (not in the article)  
-- "04_Plot_uni_smooth_gridsearch.R" : reproduce Figure 9  
-- "05_HMM_uni_unique_missing.R" : use the RoC to perform the segmentation of the 3 main flight phases for a single flight of your choice but draw missing values (Figure 5)  
-- "06_HMM_multi_unique.R" : segmentation for 6 flight phases for a single flight of your choice (Figure 7)  
-  Loop this script to get the results for several flights.  
-- "07_Plot_multi.R" : plot results for 6 flight phases looping script "06_HMM_multi_unique.R" (Figure 8). 
-- "08_Plot_multi_smooth_gridsearch.R" : smoothing effect - multivariate HMM (Figure 10 & Figure 11)  
-- "09_Helicopter.R" : dowload helicopter flight and perform the segmentation (Subsection 6.3)    
+- **01_Vizu_NASA_sample.R** : vizualize a single NASA flight (Figure 1 in the article)  
+- **02_HMM_uni_unique.R** : use the RoC to perform the segmentation of the 3 main flight phases for a single flight of your choice (Figure 3)  
+  Loop this script to get the results for 2,868 flights.
+  An example for the first 500 flights is given in the script "02_HMM_uni_01.R" (change directories accordingly)
+  For each interation (that is to say for each flight), create a csv. 
+- **03_HMM_uni_unique_smoothed.R** : segmentation of the 3 main flight phases for given flight with smoothing  
+  Loop this script to get the results for several flights.
+  An example for the first 500 flights is given in the script "03_HMM_uni_smoothed_01.R" (change directories accordingly)
+  For each interation (that is to say for each flight), a csv is created. 
+- **04_Plot_uni.R** : plot results for the 3 main flight phases looping script "02_HMM_uni_unique.R" (Figure 4)  
+- **04_Plot_uni_smooth.R** : plot results for the 3 main flight phases with smoothing (not in the article)  
+- **04_Plot_uni_smooth_gridsearch.R** : reproduce Figure 9. You can use "grid_search_uni_01.R" to produce grid search results for the first 100 flights. 
+- **05_HMM_uni_unique_missing.R** : use the RoC to perform the segmentation of the 3 main flight phases for a single flight of your choice but draw missing values (Figure 5)  
+- **06_HMM_multi_unique.R** : segmentation for 6 flight phases for a single flight of your choice (Figure 7)  
+  Loop this script to get the results for several flights.
+  An example for the first 500 flights is given in the script "06_HMM_multi_01.R" (change directories accordingly)
+  For each interation (that is to say for each flight), a csv is created. 
+- **07_Plot_multi.R** : plot results for 6 flight phases looping script "06_HMM_multi_unique.R" (Figure 8)   
+- **08_Plot_multi_smooth_gridsearch.R** : smoothing effect - multivariate HMM (Figure 10 & Figure 11). You can use "Smoothing_multivariate_01.R" to reproduce data for the first 100 flights. 
+- **09_Helicopter.R** : dowload helicopter flight and perform the segmentation (Subsection 6.3)    
