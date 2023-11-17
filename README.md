@@ -9,7 +9,7 @@
 ### Step 2: Clean raw data with "00_Clean_NASA_raw.R"
 
 For each individual file (Matlab file), a .csv file is created if the flight is valid. 
-Create and specify a folder to store all the clean flights "clean_data" (2,868 flights in total)
+Create and specify a folder to store all the clean flights "clean_data" (create it) (2,868 flights in total)
 
 ### Reproduce results
 
