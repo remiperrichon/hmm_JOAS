@@ -7,6 +7,9 @@ library(dplyr) #handle data tables
 library(lubridate) #handle dates 
 library(R.matlab) #handle Matlab files 
 
+path_raw = "./raw_data"
+path_clean = "./clean_data"
+
 ################################################################################
 #### Step 0 - download data 
 ################################################################################
@@ -21,7 +24,7 @@ library(R.matlab) #handle Matlab files
 # individual flights are recorded in a Matlab file format
 ################################################################################
 
-my_list_matlab = list.files("/Volumes/T7/HMM/NASA_raw", full.names = TRUE)
+my_list_matlab = list.files(path_raw, full.names = TRUE)
 
 #How many flights in total ? 
 length(my_list_matlab)
@@ -104,7 +107,7 @@ for(k in 1:length(my_list_matlab)){
                                                 phase7 = "Rollout")
       
       
-      write.csv(Flight, paste0("/Volumes/T7/HMM/NASA_clean_2/flight_", k, ".csv"), row.names=FALSE)
+      write.csv(Flight, paste0(path_clean, "/flight_", k, ".csv"), row.names=FALSE)
       print(k/length(my_list_matlab))
 }
 }
