@@ -46,4 +46,4 @@ Create and specify a folder to store all the clean flights "clean_data" (create 
   You can use "Smoothing_multivariate_01.R" to reproduce data for the first 100 flights. First, you need to create an empty folder "folder_res_5".
   For each interation (that is to say for each flight), a csv is created in "folder_res_5".  
   
-- **09_Helicopter.R** : dowload helicopter flight and perform the segmentation (Subsection 6.3). You need to access the Impala Shell (https://opensky-network.org/impala-guide).         
+- **09_Helicopter.R** : download helicopter flight and perform the segmentation (Subsection 6.3). You need to access the Impala Shell (https://opensky-network.org/impala-guide).         
