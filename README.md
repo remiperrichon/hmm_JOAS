@@ -11,7 +11,7 @@
 For each individual file (Matlab file), a .csv file is created if the flight is valid. 
 Create and specify a folder to store all the clean flights "clean_data" (2,868 flights in total)
 
-### File description 
+### Reproduce results
 
 - "01_Vizu_NASA_sample.R" : vizualize a single NASA flight (Figure 1 in the article)  
 - "02_HMM_uni_unique.R" : use the RoC to perform the segmentation of the 3 main flight phases for a single flight of your choice (Figure 3)  
