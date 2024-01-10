@@ -8,8 +8,8 @@ library(ggpubr)
 library(leaflet)
 library(dplyr)
 
-col_vector = c("#e3342f",  	"#4dc0b5", "#f6993f", "#38c172", "#ffed4a", "#3490dc", 
-               "#9561e2", "#f66d9b")
+col_vector = c("#e3342f", "#4dc0b5", "#f6993f", "#38c172", "#ffed4a", "#3490dc", 
+               "#9561e2")
 
 path_clean = "./clean_data"
 path_to_icon_leaflet_1 = "./map_symbols/departure.png"
